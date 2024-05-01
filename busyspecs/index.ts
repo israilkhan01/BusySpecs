@@ -1,7 +1,8 @@
 import { Application } from "express";
 
 // Import the express in typescript file
-const express  = require("express");
+const express = require("express");
+const db=require('./config/db');
 
 // Initialize the express engine
 const app:Application = express();
