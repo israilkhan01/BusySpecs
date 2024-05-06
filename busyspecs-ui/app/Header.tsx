@@ -1,12 +1,15 @@
 import React from 'react'
-import "./layout.css"
+import "./dashboard/styles/layout.css"
+import Link from 'next/link'
 function Header() {
   return (
    
     <div className="topNav">
         <div className="logoContainer">
              <div className="logo">
-                 <img src="/attachments/layoutColor.png"/>
+                  <Link href={"/"}>
+                  <img className='w-[160px]' src="/attachments/layoutColor.png"/>
+                  </Link>
              </div>
         </div>
         <div className="mainLinks">

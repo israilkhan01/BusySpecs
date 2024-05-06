@@ -1,19 +1,20 @@
 // `app/dashboard/page.tsx` is the UI for the `/dashboard` URL
 export default function Page() {
     return (
-        <div className="rest">
+        <div className="rest mx-3">
 
         <div className="profileDetailsEdit">
           <div className="profileDetailHeader">
-              <div className="welcome">
-                        <h2 className="welcome-text">Welcome Back, Azhar !  <i
-                            className="fas fa-laugh text-[rgb(104, 5, 5)]"></i></h2>
+              <div className="welcome"> 
+                        <h2 className="welcome-text text-[30px]">Welcome Back, Azhar !  <i
+                            className="fas fa-laugh text-[rgb(104, 5, 5)] text-[30px]"></i></h2>
+
             <span className="WelcomeDescription">
                 Thanx For Joining Our Community which will help the millions of Developer/Designers  acrooss the World.. 
             </span>
               </div>
               <div className="profilesvg">
-                {/* <!-- <img src="./Images/ProfileHead.svg" alt="" srcset=""> --> */}
+                <img src="./images/ProfileHead.svg" alt="" />
               </div>
           </div>
           <div className="DetailSection">
@@ -31,8 +32,9 @@ export default function Page() {
                 <div className="editbuttonContainer">
                     <table className="w-[80%]">
                    
-                  
-                        <tr>
+                     
+                                <tbody>
+                                <tr>
                           <td>Name</td>
                           <td className="particularDetail">Azhar Ahmed</td>
                         
@@ -63,6 +65,7 @@ export default function Page() {
                             <td>Gender</td>
                             <td className="particularDetail"><input type="text" value="Male" /></td>
                         </tr>
+                        </tbody>
                       </table>
                      
                       <div className="editButton">

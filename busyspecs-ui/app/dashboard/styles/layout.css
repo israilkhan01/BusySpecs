@@ -11,12 +11,12 @@
 body{
   background-color: white;
 
-  background-repeat: no-repeat;
+  /* background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-size: 500px 500px;
   background-position: center;
-  background-image: url('/images/undraw_male_avatar_323b.svg');
+  background-image: url('/images/undraw_male_avatar_323b.svg'); */
 }
 .topNav {
   height: 60px;
@@ -296,9 +296,15 @@ body{
   flex-direction: row;
   justify-content: space-between;
   top: 55px;
+  /* background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; */
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-size: 500px 500px;
+  background-position: left calc(100% - 250px) center;  /* 300+250 =  */
+  background-image: url('/images/undraw_male_avatar_323b.svg');
 }
 
 .profile-container{
@@ -317,12 +323,13 @@ body{
   font-weight: 500;
 }
 .profileImg{  
+  display: flex;
+  justify-content: center;
   padding-top: 15px;
   border-radius: 50%;
   overflow: hidden;
   text-align: center;
   position: relative;  
-  width: 100%;
   /* height: 32vh; */
 }
 .userProfile{
@@ -376,7 +383,7 @@ body{
 
 .rest{
    position: sticky;
-   width: calc(100% - 600px);
+   width: calc(100% - 300px);
    margin-top: 10px;
    margin-bottom: 10px;
 }
