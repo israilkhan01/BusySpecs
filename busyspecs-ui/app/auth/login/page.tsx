@@ -1,10 +1,11 @@
+import Link from "next/link"
 
 
 
 function page() {
   return (
-    <div className="relative flex justify-center items-center h-[100vh] b bg-[url('/images/undraw_login_re_4vu2.svg')] bg-contain bg-no-repeat bg-left-bottom">
-      <div className="flex items-center justify-center rounded flex-col w-[500px] h-[500px] py-8 bg-[#dadada6d] backdrop-filter backdrop-blur-md backdrop-saturate-50">
+    <div className="relative flex justify-center items-center h-[100vh] b bg-[url('/images/undraw_login_re_4vu2.svg')] bg-[length:700px_400px] bg-no-repeat bg-center">
+      <div className="shadow-lg flex items-center justify-center rounded flex-col w-[500px] h-[500px] py-8 bg-[#ffffffe0] backdrop-filter backdrop-blur-md backdrop-saturate-50">
           <h1 className="text-[30px] font-bold">
             Welcome Back !
         </h1>
@@ -22,7 +23,8 @@ function page() {
             
           </form>
           <div className="mt-4">
-            <span>Don't have an account? </span> <button className="text-[#43007E]">Register</button>
+            <span> Don't have an account? </span> <Link href={"/auth/sign-in"}>
+            <button className="text-[#43007E]">Register</button></Link>
           </div>
         </div>
       </div>

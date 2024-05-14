@@ -30,7 +30,7 @@ const postSchema=new mongoose.Schema({
     images: [
         { type: String }
     ], // Array of image URLs
-    
+
     //include the array of ids of all comments in  the post schema itself
     comments:[{
         type:mongoose.Schema.Types.ObjectId,
@@ -48,10 +48,10 @@ const postSchema=new mongoose.Schema({
 });
 
 const storage = multer.diskStorage({
-    destination: function (req, file, cb) {
+    destination: function (req:any, file:any, cb:any) {
       cb(null,path.join( __dirname,'..',AVATAR_PATH))
     },
-    filename: function (req, file, cb) {
+    filename: function (req:any, file:any, cb:any) {
       cb(null, file.fieldname + '-' + Date.now())
     }
   });
